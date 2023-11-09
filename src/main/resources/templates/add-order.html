@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Add order</title>
+    <link rel="stylesheet" type="text/css" href="../static/style-add-order.css">
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+<header th:insert="navbar :: header"></header>
+<h1 th:text="'Add new order'" class="card-text" id="title"/>
+<div class="container">
+    <h2>Personal information and delivery address</h2>
+    <form th:action="@{/orders/add}" method="post" class="form-horizontal">
+
+        <div class="group">
+            <input type="text" name="name" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+        </div>
+
+        <div class="group">
+            <input type="text" name="phone" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Phone</label>
+        </div>
+
+        <div class="group">
+            <input type="text" name="address" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Delivery address</label>
+        </div>
+
+        <h2>Salads</h2>
+        <div th:each="salad, itrStat1 : ${salads}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${salad.id}" th:id="'salad_checkbox_' + ${itrStat1.index}">
+            <label th:for="'salad_checkbox_' + ${itrStat1.index}">
+                <span th:text="${salad.name}"></span> (
+                <span th:text="${salad.price}"></span> UAH,
+                <span th:text="${salad.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Soups</h2>
+        <div th:each="soup, itrStat2 : ${soups}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${soup.id}" th:id="'soup_checkbox_' + ${itrStat2.index}">
+            <label th:for="'soup_checkbox_' + ${itrStat2.index}">
+                <span th:text="${soup.name}"></span> (
+                <span th:text="${soup.price}"></span> UAH,
+                <span th:text="${soup.servingWeight}"></span> g)
+            </label>
+        </div>
+
+        <h2>Desserts</h2>
+        <div th:each="dessert, itrStat3 : ${desserts}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${dessert.id}" th:id="'dessert_checkbox_' + ${itrStat3.index}">
+            <label th:for="'dessert_checkbox_' + ${itrStat3.index}">
+                <span th:text="${dessert.name}"></span> (
+                <span th:text="${dessert.price}"></span> UAH,
+                <span th:text="${dessert.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Mains</h2>
+        <div th:each="main, itrStat4 : ${mains}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${main.id}" th:id="'main_checkbox_' + ${itrStat4.index}">
+            <label th:for="'main_checkbox_' + ${itrStat4.index}">
+                <span th:text="${main.name}"></span> (
+                <span th:text="${main.price}"></span> UAH,
+                <span th:text="${main.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Burgers</h2>
+        <div th:each="burger, itrStat5 : ${burgers}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${burger.id}" th:id="'burger_checkbox_' + ${itrStat5.index}">
+            <label th:for="'burger_checkbox_' + ${itrStat5.index}">
+                <span th:text="${burger.name}"></span> (
+                <span th:text="${burger.price}"></span> UAH,
+                <span th:text="${burger.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Starters</h2>
+        <div th:each="starter, itrStat6 : ${starters}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${starter.id}" th:id="'starter_checkbox_' + ${itrStat6.index}">
+            <label th:for="'starter_checkbox_' + ${itrStat6.index}">
+                <span th:text="${starter.name}"></span> (
+                <span th:text="${starter.price}"></span> UAH,
+                <span th:text="${starter.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Steaks</h2>
+        <div th:each="steak, itrStat7 : ${steaks}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${steak.id}" th:id="'steak_checkbox_' + ${itrStat7.index}">
+            <label th:for="'steak_checkbox_' + ${itrStat7.index}">
+                <span th:text="${steak.name}"></span> (
+                <span th:text="${steak.price}"></span> UAH,
+                <span th:text="${steak.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Alcoholic drinks</h2>
+        <div th:each="alcdrink, itrStat8 : ${alcDrinks}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${alcdrink.id}" th:id="'alc_checkbox_' + ${itrStat8.index}">
+            <label th:for="'alc_checkbox_' + ${itrStat8.index}">
+                <span th:text="${alcdrink.name}"></span> (
+                <span th:text="${alcdrink.price}"></span> UAH,
+                <span th:text="${alcdrink.servingWeight}"></span> g)
+            </label>
+        </div>
+        <h2>Non alcoholic drinks</h2>
+        <div th:each="drink, itrStat9 : ${nonAlcDrinks}" class="group1">
+            <input type="checkbox" name="productIdArray" th:value="${drink.id}" th:id="'nonalc_checkbox_' + ${itrStat9.index}">
+            <label th:for="'nonalc_checkbox_' + ${itrStat9.index}">
+                <span th:text="${drink.name}"></span> (
+                <span th:text="${drink.price}"></span> UAH,
+                <span th:text="${drink.servingWeight}"></span> g)
+            </label>
+        </div>
+
+        <div class="fixed-btn">
+            <button type="submit">
+                <span>Confirm order</span>
+            </button>
+        </div>
+        <div class="fixed-btn-call">
+            <p>Call manager</p>
+        </div>
+        <a class="fixed-btn-back" href="/orders">
+            <p>Back</p>
+        </a>
+    </form>
+
+</div>
+
+<!--SCRIPTS TO ROTATE SOME ELEMENTS BY MOVING THE MOUSE CURSOR-->
+<script>
+    VanillaTilt.init(document.querySelectorAll(".fixed-btn, .fixed-btn-back, .fixed-btn-call"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    });
+</script>
+
+</body>
+</html>

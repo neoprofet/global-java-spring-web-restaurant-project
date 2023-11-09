@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="../static/style-home.css">
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+</head>
+
+<body style="background-image: url('/images/mains.png'); background-color: whitesmoke; background-repeat: no-repeat; background-size: 105%;">
+<header th:insert="navbar :: header"></header>
+<h1 th:text="'Restaurant'" class="card-text" id="title"/>
+
+<!--BLOCKS OF THE PRODUCT CATEGORIES TO FOLLOW-->
+<div class="container-home">
+
+    <!--SALADS BLOCK -->
+    <div class="box">
+        <h2 class="name">Salads</h2>
+        <a href="/salads" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/salad-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--SOUPS BLOCK -->
+    <div class="box">
+        <h2 class="name">Soups</h2>
+        <a href="/soups" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/soup-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--DESSERTS BLOCK -->
+    <div class="box">
+        <h2 class="name">Desserts</h2>
+        <a href="/desserts" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/dessert-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--MAIN DISHES BLOCK -->
+    <div class="box">
+        <h2 class="name">Mains</h2>
+        <a href="/mains" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/mains-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--STARTERS BLOCK -->
+    <div class="box">
+        <h2 class="name">Starters</h2>
+        <a href="/starters" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/starters-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--BURGERS BLOCK -->
+    <div class="box">
+        <h2 class="name">Burgers</h2>
+        <a href="/burgers" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/burger-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--STEAKS BLOCK -->
+    <div class="box">
+        <h2 class="name">Steaks</h2>
+        <a href="/steaks" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/steaks-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--NON-ALCOHOLIC BEVERAGES BLOCK -->
+    <div class="box">
+        <h2 class="name">Drinks</h2>
+        <a href="/non-alcoholic-beverages" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/drinks-icon.png" alt="" class="product" draggable="false">
+    </div>
+    <div class="box">
+
+        <!--ALCOHOLIC BEVERAGES BLOCK -->
+        <h2 class="name">Alcoholic drinks</h2>
+        <a href="/alcoholic-beverages" class="buy">More</a>
+        <div class="circle"></div>
+        <img src="../static/images/alcohol-icon.png" alt="" class="product" draggable="false">
+    </div>
+
+    <!--ORDERS BLOCK. HERE YOU CAN GO TO THE ORDER ADDING PAGE -->
+    <div class="box-wide">
+        <div class="content">
+            <div class="text-content">
+                <h2 class="name-wide">Orders</h2>
+                <p class="text-wide">Certainly, we would be pleased to assist you
+                    in placing an order at our establishment.
+                    Our menu boasts a diverse array of delectable dishes. Let's begin.</p>
+                <a href="/orders/add" class="buy-wide">Make an order</a>
+            </div>
+            <img src="../static/images/orders-window.png" alt="" class="product-wide" draggable="false">
+        </div>
+        <div class="circle"></div>
+    </div>
+</div>
+</body>
+
+<!--SCRIPTS TO ROTATE SOME ELEMENTS BY MOVING THE MOUSE CURSOR-->
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+        max: 25,
+        speed: 400
+    });
+</script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box-wide"), {
+        max: 8,
+        speed: 60
+    });
+</script>
+</html>

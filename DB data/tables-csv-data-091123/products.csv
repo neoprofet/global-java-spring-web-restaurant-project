@@ -1,0 +1,110 @@
+1,Caesar,1,229,430,1005
+2,Greek,1,205,420,616
+3,Tuna salad,1,254,280,751
+4,Olivier,1,274,160,954
+5,Quinoa Salad,1,241,200,354
+6,Nicoise,1,285,250,402
+7,Caprese,1,243,150,246
+8,Cobb,1,277,270,490
+9,Asian Noodle Salad,1,252,240,380
+10,Walnut Fusion,1,268,290,530
+11,Thai Beef Salad,1,273,220,325
+12,Tom Yum,2,175,450,562
+13,Mushroom cream soup,2,145,400,438
+14,Ramen,2,185,350,521
+15,Spicy ramen,2,190,350,529
+16,Curry soup,2,210,400,542
+17,Minestrone,2,250,450,369
+18,Cheese soup,2,260,400,421
+19,Pozole soup,2,280,450,395
+20,Gazpacho,2,290,400,343
+21,Clam chowder,2,270,420,392
+22,Tiramisu,3,90,150,320
+23,Cheesecake,3,120,160,415
+24,Panna cotta,3,115,220,318
+25,Napoleon,3,130,250,421
+26,Honey cake,3,120,250,452
+27,Banana Pie,3,125,240,431
+28,Fruit sorbet,3,80,200,368
+29,Fruit icecream,3,90,200,368
+30,Almond Croissant,3,70,120,326
+31,Chocolate Croissant,3,70,120,309
+32,Plain Croissant,3,60,100,270
+33,Raspberry croissant,3,70,120,312
+34,Mushroom and spinach pasta,4,135,300,430
+35,Vegetable teriyaki with rice,4,145,300,490
+36,Tagliatelle with wild mushrooms,4,140,300,421
+37,Potato gratin,4,145,250,342
+38,Nutty vegetable rice,4,130,300,419
+39,Pad thai,4,160,300,512
+40,Curry noodles,4,155,300,474
+41,Sesame noodles,4,145,250,349
+42,Buckwheat with mushroom sauce,4,125,250,367
+44,Tomato bruschetta,5,110,200,202
+45,Calamari in Batter,5,190,200,252
+46,Cheese Sticks,5,100,150,332
+47,Avocado Bruschetta,5,120,200,249
+49,Crab jambalaya,5,145,250,343
+50,Potato dips,5,80,300,423
+51,French fries,5,70,300,412
+52,Cheeseburger,6,120,250,421
+53,Hamburger,6,110,250,394
+54,Guacamole hamburger,6,130,250,459
+55,Mushroom and brie hamburger,6,150,250,467
+56,Bacon hamburger,6,130,250,424
+57,Chickenburger,6,120,250,416
+60,Greek chickenburger,6,180,250,486
+61,Beef steak,7,380,250,406
+62,Pork steak,7,360,250,387
+64,Vitello Tonnato steak,7,430,280,398
+65,Duck steak with orange sauce,7,450,300,441
+66,Salmon steak,7,370,280,266
+67,Rabbit steak with jam,7,400,250,292
+68,Mojito,9,80,300,143
+69,Pina colada,9,90,300,186
+70,Fresh orange juice,9,70,250,83
+71,Fresh apple juice,9,70,250,71
+72,Fresh cherry juice,9,70,250,86
+73,Raspberry banana smoothie,9,90,300,144
+74,Pineapple mint juice,9,80,250,128
+75,Mango papaya smoothie,9,90,300,152
+76,Berry iced tea,9,90,300,87
+77,Cappuccino,9,50,200,89
+78,Flat white,9,60,250,119
+79,Espresso,9,40,40,3
+80,American coffee,9,50,200,4
+81,Mocha,9,70,250,198
+82,Latte macchiato,9,80,250,154
+83,Latte,9,70,250,126
+84,Iced latte,9,75,250,116
+85,Cocoa,9,80,250,195
+86,Chocolate milkshake,9,110,300,223
+87,Vanilla milkshake,9,105,300,216
+88,Banana milkshake,9,110,300,263
+89,Strawberry milkshake,9,110,300,245
+90,Black tea,9,40,200,5
+48,Chicken paprikash,5,150,250,329
+58,Mushroom brie chickenburger,6,150,250,442
+59,Pineapple dorblu chickenburger,6,180,250,469
+63,Lamb steak,7,390,250,393
+91,Green tea,9,40,200,3
+92,Ginger tea,9,50,200,87
+93,Mint tea,9,50,200,83
+94,Water,9,10,200,0
+95,Sparkling water,9,15,200,0
+96,Sex on the Beach,8,160,250,298
+97,Mai Tai,8,180,250,321
+98,Cosmopolitan,8,180,250,349
+99,Bloody Mary,8,150,250,302
+100,Daiquiri,8,160,250,343
+101,Margarita,8,170,250,321
+102,Colada,8,180,250,335
+103,Roccaperciata Grillo,8,185,150,309
+104,Shiraz Malbec Esperado,8,210,150,327
+106,Valpolicella Essere,8,210,150,331
+107,Shiraz Malbec Esperado,8,210,150,345
+108,Vecchia Romagna,8,160,50,290
+109,Absolut,8,110,50,299
+110,Chivas Regal 12 y.o.,8,270,50,272
+43,Mashed Potatoes,4,150,300,392
+105,Sogrape Vinhos,8,295,150,330

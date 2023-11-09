@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <title>Order info</title>
+  <link rel="stylesheet" type="text/css" href="../static/style-order-info.css">
+  <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<header th:insert="navbar :: header"></header>
+<body style="background-image: url('/images/orders.png'); background-color: whitesmoke; background-repeat: no-repeat; background-size: 100%;">
+<div class="container" th:each="order: ${container}">
+
+  <div class="card">
+    <div class="content">
+      <h2 th:text="'General information'" class="card-text"></h2>
+      <h3 th:text="'Time: ' +${#temporals.format(order.time, 'dd.MM.yyyy HH:mm', 'Europe/Kiev')}" class="card-text"></h3>
+      <h3 th:text="'Receiver name: ' + ${order.customer.name}" class="card-text"></h3>
+      <h3 th:text="'Receiver phone: ' + ${order.customer.phone}" class="card-text"></h3>
+      <h3 th:text="'Receiver address: ' + ${order.address}" class="card-text"></h3>
+      <h3 th:text="'Bill: ' + ${order.price}+'.00 UAH'" class="card-text"></h3>
+
+      <h2 th:text="'Products'" class="card-text"></h2>
+      <div class="products">
+        <p th:each="product, iterStat : ${order.products}">
+          <span th:text="${product.name + ' (' + product.price + ' UAH ' + product.servingWeight + ' g)' + (iterStat.last ? '.' : ',')}" ></span>
+        </p>
+      </div>
+      <form method="post" th:action="'/order/' + ${order.id} + '/delete'">
+        <button type="submit" class="delete">Delete</button>
+      </form>
+      <a th:href="'/orders'" class="back">Back</a>
+
+  </div>
+  </div>
+</div>
+
+<!--SCRIPTS TO ROTATE SOME ELEMENTS BY MOVING THE MOUSE CURSOR-->
+<script>
+  VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 5,
+    speed: 1900,
+    glare: true,
+    "max-glare": 1,
+  });
+</script>
+</body>
+</html>

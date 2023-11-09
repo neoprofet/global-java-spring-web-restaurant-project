@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <title>Alcoholic drinks</title>
+  <link rel="stylesheet" type="text/css" href="../static/style-menu.css">
+  <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<header th:insert="navbar :: header"></header>
+<body style="background-image: url('/images/adrinks.png'); background-color: whitesmoke; background-repeat: no-repeat; background-size: 135%;">
+<h1 th:text="'Alcoholic beverages'" class="card-text" id="title"/>
+<div class="container">
+  <div class="row" th:each="product: ${alcoholicBeverages}">
+    <div class="col md-3" >
+      <div class="card">
+        <h3 th:text="${product.name}" class="card-text"/>
+        <div class="ccal-weight">
+          <span th:text="'🔥 ' + ${product.energyValue}+' kcal' " class="card-text"></span>
+          <span th:text="'⚖️ ' + ${product.servingWeight}+' gr'" class="card-text"></span>
+        </div>
+        <a th:href="'/product/' + ${product.id}" class="more">More details</a>
+        <img th:src="@{'/images/product' + ${product.id} + '.png'}" alt="Product Image" />
+        <div class="content">
+          <div class="alert alert-secondary" role="alert">
+            <p th:each="ingredient : ${product.ingredients}">
+              <span th:text="${ingredient.name}">-</span>
+            </p>
+          </div>
+        </div>
+
+        <span th:text="'Price: ' + ${product.price}+'.00 UAH'" class="card-text price-span"></span>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--SCRIPTS TO ROTATE SOME ELEMENTS BY MOVING THE MOUSE CURSOR-->
+<script>
+  VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+  });
+</script>
+</body>
+</html>

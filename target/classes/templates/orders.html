@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Soups</title>
+    <link rel="stylesheet" type="text/css" href="../static/style-orders.css">
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+</head>
+<header th:insert="navbar :: header"></header>
+<body style="background-image: url('/images/orders.png'); background-color: whitesmoke; background-repeat: no-repeat; background-size: 100%;">
+<h1 th:text="'Orders'" class="card-text" id="title"/>
+<div class="center-content"> <!-- Додали новий контейнер для центрування -->
+    <a href="/orders/add" class="create">&#10133; Add new order</a>
+</div>
+<div class="container">
+    <div class="row" th:each="order: ${orders}">
+        <div class="col md-3" >
+            <!--<a class="fixed-btn" href="/orders/add">
+                <p>Add order</p>
+            </a>-->
+            <div class="card">
+                <div class="content">
+                    <h3 th:text="'Time: ' +${#temporals.format(order.time, 'dd.MM.yyyy HH:mm', 'Europe/Kiev')}" class="card-text"></h3>
+
+                    <h3 th:text="'Receiver name: ' + ${order.customer.name}" class="card-text"></h3>
+                <h3 th:text="'Receiver phone: ' + ${order.customer.phone}" class="card-text"></h3>
+                <h3 th:text="'Receiver address: ' + ${order.address}" class="card-text"></h3>
+                <h3 th:text="'Bill: ' + ${order.price}+'.00 UAH'" class="card-text"></h3>
+                </div>
+                <a th:href="'/order/' + ${order.id}" class="more">More details</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--SCRIPTS TO ROTATE SOME ELEMENTS BY MOVING THE MOUSE CURSOR-->
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card, .create"), {
+        max: 20,
+        speed: 1400,
+        glare: true,
+        "max-glare": 1,
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1536 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 HelveticaNeue-BoldItalic;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 PostgreSql PgAdmin4 (postgres)\
+database name: restaurant\
+server: localhost\
+dumbs (sql): restaurant-data-081123.sql (file in current folder)\
+\
+------------------------My personal sql notes here--------------------------------\
+\
+\pard\pardeftab560\partightenfactor0
+
+\f1\b\fs40 \cf0 Restaurant project DB\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f2\b0\fs26 \cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 DB Values\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b \cf0 \ul \ulc0 ingredients
+\f2\b0 \ulnone \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 INSERT INTO ingredients (id, name) VALUES (1, 'salt');\
+INSERT INTO ingredients (id, name) VALUES (2, 'sugar');\
+INSERT INTO ingredients (id, name) VALUES (3, '
+\f1\b Flour
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (4, '
+\f1\b Eggs
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (5, '
+\f1\b Milk
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (6, '
+\f1\b Butter
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (7, \'91
+\f1\b Sunflower oil
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (8, '
+\f1\b Yeast
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (9, '
+\f1\b Baking Powder
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (11, '
+\f1\b Vanilla Extract
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (12, '
+\f1\b Cinnamon
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (13, \'91Milk 
+\f1\b chocolate
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (14, '
+\f1\b Cocoa Powder
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (15, '
+\f1\b Guacamole
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (16, '
+\f1\b Artichokes\uc0\u1089 
+\f2\b0 \'92);\
+INSERT INTO ingredients (id, name) VALUES (17, '
+\f1\b Cream
+\f2\b0 \'92);\
+INSERT INTO ingredients (id, name) VALUES (18, '
+\f1\b Tomatoes
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (19, '
+\f1\b Onions
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (20, '
+\f1\b Garlic
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (21, '
+\f1\b Pepper
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (22, '
+\f1\b Lemon
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (23, '
+\f1\b Lime
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (24, '
+\f1\b Orange
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (25, '
+\f1\b Chili Pepper
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (26, '
+\f1\b Ginger
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (27, '
+\f1\b Honey
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (28, '
+\f1\b Vinegar
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (29, '
+\f1\b Soy Sauce
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (30, '
+\f1\b Wine
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (31, '
+\f1\b Beer
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (32, '
+\f1\b Rice
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (33, '
+\f1\b Pasta
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (34, '
+\f1\b Rice Vinegar
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (35, '
+\f1\b Soybean Oil
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (36, '
+\f1\b Coconut Milk
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (37, '
+\f1\b Peanut Butter
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (38, '
+\f1\b Oats
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (39, '
+\f1\b Maple Syrup
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (40, '
+\f1\b Mustard
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (41, '
+\f1\b Mayonnaise
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (42, '
+\f1\b Ketchup
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (43, '
+\f1\b Worcestershire Sauce
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (44, '
+\f1\b Sour Cream
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (45, '
+\f1\b Cream Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (46, '
+\f1\b Whipped Cream
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (47, '
+\f1\b Chives
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (48, '
+\f1\b Parsley
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (49, '
+\f1\b Basil
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (50, '
+\f1\b Mint
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (51, '
+\f1\b Cilantro
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (52, '
+\f1\b Dill
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (53, '
+\f1\b Rosemary
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (54, '
+\f1\b Thyme
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (55, '
+\f1\b Paprika
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (56, '
+\f1\b Nutmeg
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (57, '
+\f1\b Cumin
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (58, '
+\f1\b Clove
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (59, '
+\f1\b Turmeric
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (60, '
+\f1\b Allspice
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (61, '
+\f1\b Almonds
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (62, '
+\f1\b Walnuts
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (63, '
+\f1\b Pecans
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (64, '
+\f1\b Cashews
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (65, '
+\f1\b Pistachios
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (66, '
+\f1\b Macadamia
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (67, '
+\f1\b Coconut
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (68, '
+\f1\b Raisins
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (69, '
+\f1\b Cranberries
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (70, '
+\f1\b Cheddar Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (71, '
+\f1\b Parmesan Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (72, '
+\f1\b Mozzarella Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (73, '
+\f1\b Swiss Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (74, '
+\f1\b Blue Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (75, '
+\f1\b Ricotta Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (76, '
+\f1\b Provolone Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (77, '
+\f1\b Brie Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (78, '
+\f1\b Camembert Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (79, '
+\f1\b Roquefort Cheese
+\f2\b0 ');\
+INSERT INTO ingredients (id, name) VALUES (80, '\uc0\u1057 rackers');\
+INSERT INTO ingredients (id, name) VALUES (81, 'Garlic-walnut sauce');\
+INSERT INTO ingredients (id, name) VALUES (82, 'Lettuce');\
+INSERT INTO ingredients (id, name) VALUES (83, 'Chicken breast');\
+INSERT INTO ingredients (id, name) VALUES (84, 'Cucumber');\
+INSERT INTO ingredients (id, name) VALUES (85, 'Feta Cheese');\
+INSERT INTO ingredients (id, name) VALUES (86, 'Olives');\
+INSERT INTO ingredients (id, name) VALUES (87, 'Olive oil');\
+INSERT INTO ingredients (id, name) VALUES (88, 'Tuna');\
+INSERT INTO ingredients (id, name) VALUES (89, 'Celery');\
+INSERT INTO ingredients (id, name) VALUES (90, 'Red Onion');\
+INSERT INTO ingredients (id, name) VALUES (91, 'Dill Pickles');\
+INSERT INTO ingredients (id, name) VALUES (92, 'Dijon Mustard');\
+INSERT INTO ingredients (id, name) VALUES (93, 'Lemon Juice');\
+INSERT INTO ingredients (id, name) VALUES (94, 'Boiled Potatoes');\
+INSERT INTO ingredients (id, name) VALUES (95, 'Boiled Carrots');\
+INSERT INTO ingredients (id, name) VALUES (96, 'Boiled Sausage');\
+INSERT INTO ingredients (id, name) VALUES (97, 'Green Peas');\
+INSERT INTO ingredients (id, name) VALUES (98, 'Green Onions');\
+INSERT INTO ingredients (id, name) VALUES (99, 'Mustard');\
+INSERT INTO ingredients (id, name) VALUES (100, 'Spinach');\
+INSERT INTO ingredients (id, name) VALUES (101, 'Quinoa');\
+INSERT INTO ingredients (id, name) VALUES (102, 'Lime sauce');\
+INSERT INTO ingredients (id, name) VALUES (103, 'Black beans');\
+INSERT INTO ingredients (id, name) VALUES (104, 'Green beans');\
+INSERT INTO ingredients (id, name) VALUES (105, 'Green');\
+INSERT INTO ingredients (id, name) VALUES (106, 'Balsamic vinegar');\
+INSERT INTO ingredients (id, name) VALUES (109, 'Rice noodles');\
+INSERT INTO ingredients (id, name) VALUES (110, 'Shrimp');\
+INSERT INTO ingredients (id, name) VALUES (111, 'Carrot');\
+INSERT INTO ingredients (id, name) VALUES (112, 'Sesame');\
+INSERT INTO ingredients (id, name) VALUES (113, 'Pomegranate');\
+INSERT INTO ingredients (id, name) VALUES (114, 'Mustard sauce');\
+INSERT INTO ingredients (id, name) VALUES (115, 'Beef tenderloin');\
+INSERT INTO ingredients (id, name) VALUES (116, 'Lime and fish sauce');\
+INSERT INTO ingredients (id, name) VALUES (117, \'91Champignon');\
+INSERT INTO ingredients (id, name) VALUES (118, \'91Chicken broth');\
+INSERT INTO ingredients (id, name) VALUES (119, 'Lemongrass');\
+INSERT INTO ingredients (id, name) VALUES (120, 'Kaffir Lime Leaves');\
+INSERT INTO ingredients (id, name) VALUES (121, 'Galangal');\
+INSERT INTO ingredients (id, name) VALUES (122, 'Chilies'); \
+INSERT INTO ingredients (id, name) VALUES (123, 'Fish Sauce');\
+INSERT INTO ingredients (id, name) VALUES (124, 'Lime juice');\
+INSERT INTO ingredients (id, name) VALUES (125, 'Cream');\
+INSERT INTO ingredients (id, name) VALUES (126, 'Duck');\
+INSERT INTO ingredients (id, name) VALUES (127, 'Seaweed');\
+INSERT INTO ingredients (id, name) VALUES (128, 'Bamboo shoots');\
+INSERT INTO ingredients (id, name) VALUES (129, 'Mirin');\
+INSERT INTO ingredients (id, name) VALUES (130, 'Curry paste');\
+INSERT INTO ingredients (id, name) VALUES (131, 'Broccoli');\
+INSERT INTO ingredients (id, name) VALUES (132, 'Vegetable broth');\
+INSERT INTO ingredients (id, name) VALUES (133, 'White beans');\
+INSERT INTO ingredients (id, name) VALUES (134, 'Paste');\
+INSERT INTO ingredients (id, name) VALUES (135, 'Gruyere cheese');\
+INSERT INTO ingredients (id, name) VALUES (136, 'Dried corn kernels pozole');\
+ INSERT INTO ingredients (id, name) VALUES (137, 'Oregano');\
+ INSERT INTO ingredients (id, name) VALUES (138, 'Tortillas');\
+ INSERT INTO ingredients (id, name) VALUES (139, 'Ancho');\
+ INSERT INTO ingredients (id, name) VALUES (140, 'Cilantro root');\
+INSERT INTO ingredients (id, name) VALUES (141, 'Baguette');\
+INSERT INTO ingredients (id, name) VALUES (142, 'Clams');\
+INSERT INTO ingredients (id, name) VALUES (143, 'White sauce');\
+INSERT INTO ingredients (id, name) VALUES (144, 'Coffee');\
+INSERT INTO ingredients (id, name) VALUES (145, 'Savoyardi lollipops');\
+INSERT INTO ingredients (id, name) VALUES (146, 'Mascarpone');\
+INSERT INTO ingredients (id, name) VALUES (147, 'Cookies');\
+INSERT INTO ingredients (id, name) VALUES (148, 'Vanilla');\
+INSERT INTO ingredients (id, name) VALUES (149, 'Gelatin');\
+INSERT INTO ingredients (id, name) VALUES (150, 'Puff pastry');\
+INSERT INTO ingredients (id, name) VALUES (151, 'Condensed milk');\
+INSERT INTO ingredients (id, name) VALUES (152, 'Bananas');\
+ INSERT INTO ingredients (id, name) VALUES (153, 'Strawberries');\
+ INSERT INTO ingredients (id, name) VALUES (154, 'Raspberries');\
+ INSERT INTO ingredients (id, name) VALUES (155, 'Mangoes');\
+ INSERT INTO ingredients (id, name) VALUES (156, 'Peaches');\
+INSERT INTO ingredients (id, name) VALUES (157, 'Glaze');\
+ INSERT INTO ingredients (id, name) VALUES (158, 'Almond flour');\
+INSERT INTO ingredients (id, name) VALUES (159, 'Powdered sugar');\
+INSERT INTO ingredients (id, name) VALUES (160, 'Spaghetti');\
+INSERT INTO ingredients (id, name) VALUES (161, 'Teriyaki sauce');\
+INSERT INTO ingredients (id, name) VALUES (162, 'Taliatelle pasta');\
+INSERT INTO ingredients (id, name) VALUES (163, 'Spices');\
+INSERT INTO ingredients (id, name) VALUES (164, 'Omelette');\
+INSERT INTO ingredients (id, name) VALUES (165, 'Peanut sauce');\
+INSERT INTO ingredients (id, name) VALUES (166, 'Curry sauce');\
+INSERT INTO ingredients (id, name) VALUES (167, 'Cauliflower cabbage');\
+INSERT INTO ingredients (id, name) VALUES (168, 'Spicy sesame sauce');\
+INSERT INTO ingredients (id, name) VALUES (169, 'Buckwheat');\
+INSERT INTO ingredients (id, name) VALUES (170, 'Vegetable oil');\
+ INSERT INTO ingredients (id, name) VALUES (171, 'Mashed potatoes');\
+ INSERT INTO ingredients (id, name) VALUES (172, 'Fried potatoes');\
+ INSERT INTO ingredients (id, name) VALUES (173, 'Baked potatoes');\
+INSERT INTO ingredients (id, name) VALUES (174, 'Squid rings');\
+ INSERT INTO ingredients (id, name) VALUES (175, 'Dough');\
+ INSERT INTO ingredients (id, name) VALUES (176, 'Marinara sauce');\
+ INSERT INTO ingredients (id, name) VALUES (177, 'Sweet pepper');\
+ INSERT INTO ingredients (id, name) VALUES (178, 'Green apples');\
+INSERT INTO ingredients (id, name) VALUES (179, 'Crab');\
+INSERT INTO ingredients (id, name) VALUES (180, 'Paprica');\
+INSERT INTO ingredients (id, name) VALUES (181, 'Fried Potato Bars');\
+INSERT INTO ingredients (id, name) VALUES (182, 'Ground beef');\
+ INSERT INTO ingredients (id, name) VALUES (183, 'Ground chicken');\
+ INSERT INTO ingredients (id, name) VALUES (184, 'Tzatziki sauce');\
+INSERT INTO ingredients (id, name) VALUES (185, 'Pineapple rings');\
+INSERT INTO ingredients (id, name) VALUES (186, 'Dorblu cheese');\
+INSERT INTO ingredients (id, name) VALUES (187, 'Herbs');\
+ INSERT INTO ingredients (id, name) VALUES (188, 'Pork');\
+INSERT INTO ingredients (id, name) VALUES (189, 'Lamb');\
+INSERT INTO ingredients (id, name) VALUES (190, 'Veal tenderloin');\
+ INSERT INTO ingredients (id, name) VALUES (191, 'Tonnato sauce (tuna and mayonnaise sauce)');\
+INSERT INTO ingredients (id, name) VALUES (192, 'Capers');\
+INSERT INTO ingredients (id, name) VALUES (193, 'Fruit jelly');\
+ INSERT INTO ingredients (id, name) VALUES (194, 'Rabbit meat');\
+ INSERT INTO ingredients (id, name) VALUES (195, 'Salmon');\
+ INSERT INTO ingredients (id, name) VALUES (196, 'Orange sauce');\
+ INSERT INTO ingredients (id, name) VALUES (197, 'Duck breast');\
+INSERT INTO ingredients (id, name) VALUES (198, 'Soda water');\
+ INSERT INTO ingredients (id, name) VALUES (199, 'Ice');\
+INSERT INTO ingredients (id, name) VALUES (200, 'Pineapple juice');\
+INSERT INTO ingredients (id, name) VALUES (201, 'Apple');\
+INSERT INTO ingredients (id, name) VALUES (202, 'Cherries');\
+INSERT INTO ingredients (id, name) VALUES (203, 'Yogurt');\
+INSERT INTO ingredients (id, name) VALUES (204, 'Papaya');\
+INSERT INTO ingredients (id, name) VALUES (205, 'Black tea');\
+ INSERT INTO ingredients (id, name) VALUES (206, 'Blueberries');\
+INSERT INTO ingredients (id, name) VALUES (207, 'Milk foam');\
+ INSERT INTO ingredients (id, name) VALUES (208, 'Espresso coffee');\
+INSERT INTO ingredients (id, name) VALUES (209, 'Hot chocolate');\
+INSERT INTO ingredients (id, name) VALUES (210, 'Cocoa');\
+ INSERT INTO ingredients (id, name) VALUES (211, 'Chocolate syrup');\
+ INSERT INTO ingredients (id, name) VALUES (212, 'Vanilla ice cream');\
+INSERT INTO ingredients (id, name) VALUES (213, 'Hot water');\
+INSERT INTO ingredients (id, name) VALUES (214, 'Green tea');\
+INSERT INTO ingredients (id, name) VALUES (215, 'Carbon dioxide');\
+ INSERT INTO ingredients (id, name) VALUES (216, 'Vodka');\
+ INSERT INTO ingredients (id, name) VALUES (217, 'Peach liqueur');\
+ INSERT INTO ingredients (id, name) VALUES (218, 'Orange juice');\
+ INSERT INTO ingredients (id, name) VALUES (219, 'Cranberry juice');\
+ INSERT INTO ingredients (id, name) VALUES (220, 'Dark rum');\
+ INSERT INTO ingredients (id, name) VALUES (221, 'Light rum');\
+ INSERT INTO ingredients (id, name) VALUES (222, 'Orange liqueur');\
+ INSERT INTO ingredients (id, name) VALUES (223, 'Worcestershire sauce'); // DROP IT \
+ INSERT INTO ingredients (id, name) VALUES (224, 'Tequila');\
+ INSERT INTO ingredients (id, name) VALUES (225, 'White dry wine');\
+ INSERT INTO ingredients (id, name) VALUES (226, 'White semi-sweet wine');\
+ INSERT INTO ingredients (id, name) VALUES (227, 'White semi-dry wine');\
+ INSERT INTO ingredients (id, name) VALUES (228, 'Red dry wine');\
+ INSERT INTO ingredients (id, name) VALUES (229, 'Red semi-sweet wine');\
+ INSERT INTO ingredients (id, name) VALUES (230, 'Cognac');\
+ INSERT INTO ingredients (id, name) VALUES (231, 'Scotch whiskey');\
+\
+\
+
+\f1\b \ul product_categories
+\f2\b0 \
+\
+\ulnone INSERT INTO product_categories (id, name) VALUES (1, 'Salad');\
+INSERT INTO product_categories (id, name) VALUES (2, 'Soup');\
+INSERT INTO product_categories (id, name) VALUES (3, 'Dessert');\
+INSERT INTO product_categories (id, name) VALUES (4, 'Main');\
+INSERT INTO product_categories (id, name) VALUES (5, 'Starter');\
+INSERT INTO product_categories (id, name) VALUES (6, 'Burger');\
+INSERT INTO product_categories (id, name) VALUES (7, 'Steak');\
+INSERT INTO product_categories (id, name) VALUES (8, 'Alcoholic beverage');\
+INSERT INTO product_categories (id, name) VALUES (9, 'Non alcoholic beverage');\
+\
+
+\f1\b \ul products (salads)
+\f2\b0 \
+\
+\ulnone INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (1, 'Caesar', 1, 229.0, 430, 1005);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (2, 'Greek', 1, 205.0, 420, 616);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (3, 'Tuna salad', 1, 254.0, 280, 751);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (4, 'Olivier', 1, 274.0, 160, 954);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (5, 'Quinoa Salad', 1, 241.0, 200, 354);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (6, 'Nicoise', 1, 285.0, 250, 402);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (7, 'Caprese', 1, 243.0, 150, 246);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (8, 'Cobb', 1, 277.0, 270, 490);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (9, 'Asian Noodle Salad', 1, 252.0, 240, 380);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (10, 'Walnut Fusion', 1, 268.0, 290, 530);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (11, 'Thai Beef Salad', 1, 273.0, 220, 325);\
+\
+
+\f1\b \ul product ingredient (salads)
+\f2\b0 \ulnone \
+\
+// 1 \
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 
+\f3\i\b 1
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 
+\f3\i\b 18
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 
+\f3\i\b 83
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 
+\f3\i\b 4
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 7
+\f3\i\b 1
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 
+\f3\i\b 80
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 8
+\f3\i\b 1
+\f2\i0\b0 );\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (1, 
+\f3\i\b 82
+\f2\i0\b0 );\
+//2\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 55);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 84);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 85);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 86);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (2, 93);\
+//3\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 88);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 89);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 90);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 91);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 92);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 93);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 41);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (3, 82);\
+//4\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 4);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 41);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 91);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 95);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 96);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 97);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 98);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (4, 99);\
+//5\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 100);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 101);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 102);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 103);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 51);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 100);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (5, 21);\
+//6\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 88);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 4);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 86);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 104);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 105);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (6, 18);\
+//7\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (7, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (7, 72);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (7, 49);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (7, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (7, 106);\
+//8\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 83);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 107);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 108);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 4);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 82);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (8, 74);\
+//9\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (9, 21);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (9, 109);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (9, 110);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (9, 111);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (9, 112);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (9, 29);\
+//10\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (10, 113);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (10, 114);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (10, 62);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (10, 82);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (10, 87);\
+//11\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 115);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 116);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 84);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 112);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 50);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (11, 19);\
+\
+
+\f1\b \ul products (soups)
+\f2\b0 \ulnone \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (12, 'Tom Yum', 2, 175.0, 450, 562);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (13, 'Mushroom cream soup', 2, 145.0, 400, 438);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (14, 'Ramen', 2, 185.0, 350, 521);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (15, 'Spicy ramen', 2, 190.0, 350, 529);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (16, 'Curry soup', 2, 210.0, 400, 542);\
+\
+ INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+ VALUES (17, 'Minestrone', 2, 250.0, 450, 369);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (18, 'Cheese soup', 2, 260.0, 400, 421);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (19, 'Pozole soup', 2, 280.0, 450, 395);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (20, 'Gazpacho', 2, 290.0, 400, 343);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (21, 'Clam chowder', 2, 270.0, 420, 392);\
+\
+\
+
+\f1\b \ul product ingredient (soups)
+\f2\b0 \
+\
+//12\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 110);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 117);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 119);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 121);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 122);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 123);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 2);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 93);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 36);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 51);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 48);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 91);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (12, 124);\
+//13\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 117);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 6);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 105);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (13, 125);\
+//14\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 109);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 4);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 98);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 26);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 29);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 126);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 127);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 128);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (14, 129);\
+//15\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 109);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 4);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 98);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 26);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 29);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 126);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 127);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 128);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 129);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (15, 122);\
+//16\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 36);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 83);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 95);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 93);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 29);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 2);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 98);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 26);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 130);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (16, 131);\
+//17\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 111);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 89);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 49);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 71);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 132);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 133);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (17, 134);\
+//18\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 17);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 70);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 135);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 89);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 111);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (18, 105);\
+//19\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 136);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 137);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 138);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 139);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 140);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (19, 102);\
+//20\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 132);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 55);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 141);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 28);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (20, 105);\
+//21\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 118);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 142);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 94);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 89);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 107);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 143);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (21, 105);\
+\
+
+\f1\b \ul products (desserts)
+\f2\b0 \ulnone \
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (22, 'Tiramisu', 3, 90.0, 150, 320);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (23, 'Cheesecake', 3, 120.0, 160, 415);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (24, 'Panna cotta', 3, 115.0, 220, 318);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (25, 'Napoleon', 3, 130.0, 250, 421);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (26, 'Honey cake', 3, 120.0, 250, 452);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (27, 'Banana Pie', 3, 125.0, 240, 431);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (28, 'Fruit sorbet', 3, 80.0, 200, 368);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (29, 'Fruit icecream', 3, 90.0, 200, 368);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (30, 'Almond Croissant', 3, 70.0, 120, 326);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (31, 'Chocolate Croissant', 3, 70.0, 120, 309);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (32, 'Plain Croissant', 3, 60.0, 100, 270);\
+	\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+    VALUES (33, 'Raspberry croissant', 3, 70.0, 120, 312);\
+\
+
+\f1\b \ul product ingredient (desserts)
+\f2\b0 \
+\
+//\ulnone 22\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (22, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (22, 144);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (22, 14);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (22, 145);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (22, 146);\
+//23\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (23, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (23, 4);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (23, 147);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (23, 148);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (23, 45);\
+//24\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (24, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (24, 17);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (24, 148);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (24, 149);\
+//25\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 148);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 150);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 5);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 17);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 4);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (25, 6);\
+//26\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (26, 27);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (26, 150);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (26, 148);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (26, 151);\ul \
+//27\ulnone \
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (27, 151);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (27, 152);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (27, 17);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (27, 4);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (27, 147);\
+//28\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 24);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 152);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 93);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 153);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 154);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 155);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 156);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (28, 10);\
+//29\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 24);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 152);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 5);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 148);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 93);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 153);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 154);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 155);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (29, 156);\
+//30\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (30, 150);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (30, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (30, 6);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (30, 148);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (30, 157);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (30, 158);\
+//31\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (31, 150);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (31, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (31, 6);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (31, 13);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (31, 159);\
+//32\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (32, 150);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (32, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (32, 6);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (32, 159);\
+//33\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (33, 150);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (33, 2);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (33, 6);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (33, 159);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (33, 154);\
+\
+
+\f1\b \ul products (main)
+\f2\b0 \
+\
+\ulnone INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (34, 'Mushroom and spinach pasta', 4, 135.0, 300, 430);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (35, 'Vegetable teriyaki with rice', 4, 145.0, 300, 490);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (36, 'Tagliatelle with wild mushrooms', 4, 140.0, 300, 421);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (37, 'Potato gratin', 4, 145.0, 250, 342);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (38, 'Nutty vegetable rice', 4, 130.0, 300, 419);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (39, 'Pad thai', 4, 160.0, 300, 512);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (40, 'Curry noodles', 4, 155.0, 300, 474);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (41, 'Sesame noodles', 4, 145.0, 250, 349);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (42, 'Buckwheat with mushroom sauce', 4, 125.0, 250, 367);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (43, 'Mashed Potatoes with mushrooms and thyme', 4, 150.0, 300, 392);\ul \
+\
+
+\f1\b product ingredient (main)
+\f2\b0 \
+//34\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (34, 160);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (34, 117);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (34, 100);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (34, 20);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (34, 87);\ul \
+//35\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (35, 94);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (35, 131);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (35, 95);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (35, 97);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (35, 112);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (35, 161);\ul \
+//36\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (36, 162);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (36, 117);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (36, 17);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (36, 48);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (36, 20);\ul \
+//37\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (37, 94);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (37, 17);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (37, 71);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (37, 20);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (37, 163);\ul \
+//38\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (38, 32);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (38, 64);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (38, 95);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (38, 87);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (38, 163);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (38, 97);\ul \
+//39\
+\ulnone  INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (39, 109);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (39, 164);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (39, 110);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (39, 165);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (39, 29);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (39, 23);\ul \
+//40\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (40, 109);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (40, 166);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (40, 167);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (40, 128);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (40, 112);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (40, 163);\ul \
+//41\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (41, 109);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (41, 84);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (41, 105);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (41, 112);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (41, 168);\ul \
+//42\
+\ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (42, 169);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (42, 81);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (42, 19);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (42, 170);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (42, 163);\ul \
+//43\ulnone \
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (43, 171);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (43, 117);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (43, 54);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (43, 6);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (43, 1);\
+ INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (43, 21);\
+\
+\
+
+\f1\b \ul products (starters)\
+
+\f2\b0 \ulnone \
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (44, 'Tomato bruschetta', 5, 110.0, 200, 202);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (45, 'Calamari in Batter', 5, 190.0, 200, 252);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (46, 'Cheese Sticks', 5, 100.0, 150, 332);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (47, 'Avocado Bruschetta', 5, 120.0, 200, 249);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (48, 'Chicken paprikash with green apples', 5, 150.0, 250, 329);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (49, 'Crab jambalaya', 5, 145.0, 250, 343);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (50, 'Potato dips', 5, 80.0, 300, 423);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (51, 'French fries', 5, 70.0, 300, 412);\
+\
+
+\f1\b \ul product ingredient (starters)
+\f2\b0 \ulnone \
+\
+//44\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (44, 141);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (44, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (44, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (44, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (44, 49);\
+//45\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (45, 174);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (45, 175);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (45, 22);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (45, 176);\
+//46\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (46, 70);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (46, 175);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (46, 176);\
+//47\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (47, 141);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (47, 108);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (47, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (47, 20);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (47, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (47, 49);\
+//48\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (48, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (48, 87);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (48, 177);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (48, 178);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (48, 18);\
+//49\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (49, 179);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (49, 32);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (49, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (49, 180);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (49, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (49, 163);\
+//50\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (50, 181);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (50, 1);\
+//51\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (51, 181);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (51, 1);\
+\
+
+\f1\b \ul products (burgers)\
+\
+
+\f2\b0 \ulnone INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (52, 'Cheeseburger', 6, 120.0, 250, 421);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (53, 'Hamburger', 6, 110.0, 250, 394);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (54, 'Guacamole hamburger', 6, 130.0, 250, 459);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (55, 'Mushroom and brie hamburger', 6, 150.0, 250, 467);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (56, 'Bacon hamburger', 6, 130.0, 250, 424);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (57, 'Chickenburger', 6, 120.0, 250, 416);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (58, 'Mushroom and brie chickenburger', 6, 150.0, 250, 442);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (59, 'Pineapple and dorblu chickenburger', 6, 180.0, 250, 469);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (60, 'Greek chickenburger', 6, 180.0, 250, 486);
+\f1\b \ul \
+\
+product ingredient (burgers)\
+\
+
+\f2\b0 \ulnone //52\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (52, 182);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (52, 70);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (52, 91);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (52, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (52, 114);\
+//53\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (53, 182);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (53, 82);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (53, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (53, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (53, 41);\
+//54\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (54, 182);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (54, 108);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (54, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (54, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (54, 82);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (54, 73);\
+//55\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (55, 182);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (55, 117);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (55, 77);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (55, 90);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (55, 82);\
+//56\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (56, 182);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (56, 107);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (56, 70);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (56, 82);\
+//57\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (57, 183);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (57, 70);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (57, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (57, 41);\
+//58\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (58, 183);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (58, 117);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (58, 77);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (58, 90);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (58, 82);\
+//59\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (59, 183);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (59, 185);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (59, 82);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (59, 186);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (59, 19);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (59, 41);\
+//60\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 183);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 86);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 85);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 49);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 90);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (60, 184);\
+\
+
+\f1\b \ul products (steaks)\
+\
+
+\f2\b0 \ulnone INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (61, 'Beef steak', 7, 380.0, 250, 406);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (62, 'Pork steak', 7, 360.0, 250, 387);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (63, 'Pork steak', 7, 390.0, 250, 393);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (64, 'Vitello Tonnato steak', 7, 430.0, 280, 398);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (65, 'Duck steak with orange sauce', 7, 450.0, 300, 441);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (66, 'Salmon steak', 7, 370.0, 280, 266);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (67, 'Rabbit steak with jam', 7, 400.0, 250, 292);
+\f1\b \ul \
+\
+product ingredient (steaks)\
+\
+
+\f2\b0 \ulnone //61\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (61, 115);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (61, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (61, 21);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (61, 6);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (61, 187);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (61, 53);\
+//62\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (62, 188);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (62, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (62, 21);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (62, 7);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (62, 20);\
+//63\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (63, 189);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (63, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (63, 21);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (63, 7);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (63, 53);\
+//64\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (64, 190);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (64, 191);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (64, 192);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (64, 22);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (64, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (64, 21);\
+//65\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (65, 197);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (65, 196);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (65, 27);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (65, 54);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (65, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (65, 21);\
+//66\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 195);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 22);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 7);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 187);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 51);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (66, 21);\
+//67\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (67, 194);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (67, 193);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (67, 53);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (67, 1);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (67, 21);\
+\
+
+\f1\b \ul products (non alcoholic drinks)\
+\
+
+\f2\b0 \ulnone INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (68, 'Mojito', 9, 80, 300, 143);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (69, 'Pina colada', 9, 90, 300, 186);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (70, 'Fresh orange juice', 9, 70, 250, 83);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (71, 'Fresh apple juice', 9, 70, 250, 71);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (72, 'Fresh cherry juice', 9, 70, 250, 86);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (73, 'Raspberry banana smoothie', 9, 90, 300, 144);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (74, 'Pineapple mint juice', 9, 80, 250, 128);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (75, 'Mango papaya smoothie', 9, 90, 300, 152);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (76, 'Berry iced tea', 9, 90, 300, 87);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (77, 'Cappuccino', 9, 50, 200, 89);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (78, 'Flat white', 9, 60, 250, 119);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (79, 'Espresso', 9, 40, 40, 3);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (80, 'American coffee', 9, 50, 200, 4);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (81, 'Mocha', 9, 70, 250, 198);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (82, 'Latte macchiato', 9, 80, 250, 154);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (83, 'Latte', 9, 70, 250, 126);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (84, 'Iced latte', 9, 75, 250, 116);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (85, 'Cocoa', 9, 80, 250, 195);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (86, 'Chocolate milkshake', 9, 110, 300, 223);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (87, 'Vanilla milkshake', 9, 105, 300, 216);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (88, 'Banana milkshake', 9, 110, 300, 263);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (89, 'Strawberry milkshake', 9, 110, 300, 245);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (90, 'Black tea', 9, 40, 200, 5);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (91, 'Green tea', 9, 40, 200, 3);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (92, 'Ginger tea', 9, 50, 200, 87);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (93, 'Mint tea', 9, 50, 200, 83);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (94, 'Water', 9, 10, 200, 0);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (95, 'Sparkling water', 9, 15, 200, 0);
+\f1\b \ul \
+\
+product ingredient (non alcoholic drinks)\
+\
+
+\f2\b0 \ulnone //68\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (68, 23);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (68, 50);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (68, 2);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (68, 198);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (68, 199);\
+//69\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (69, 200);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (69, 36);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (69, 2);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (69, 199);\
+//70\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (70, 24);\
+//71\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (71, 201);\
+//72\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (72, 202);\
+//73\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (73, 154);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (73, 152);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (73, 203);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (73, 27);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (73, 199);\
+//74\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (74, 200);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (74, 50);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (74, 2);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (74, 199);\
+//75\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (75, 155);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (75, 204);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (75, 203);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (75, 27);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (75, 199);\
+//76\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (76, 205);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (76, 153);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (76, 154);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (76, 206);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (76, 2);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (76, 199);\
+//77\
+\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (77, 208);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (77, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (77, 207);\
+//78
+\f1\b \ul \
+
+\f2\b0 \ulnone INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (78, 208);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (78, 5);
+\f1\b \ul \
+
+\f2\b0 \ulnone //79\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (79, 208);\
+//80\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (80, 208);\
+//81\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (81, 208);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (81, 209);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (81, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (81, 46);\
+//82\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (82, 208);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (82, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (82, 207);\
+//83\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (83, 208);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (83, 5);\
+//84\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (84, 208);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (84, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (84, 199);\
+//85\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (85, 210);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (85, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (85, 14);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (85, 2);\
+//86\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (86, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (86, 211);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (86, 212);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (86, 2);\
+//87\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (87, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (87, 11);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (87, 212);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (87, 2);\
+//88\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (88, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (88, 152);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (88, 212);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (88, 2);\
+//89\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (89, 5);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (89, 153);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (89, 212);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (89, 2);\
+//90\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (90, 205);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (90, 213);\
+//91\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (91, 214);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (91, 213);\
+//92\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (92, 26);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (92, 27);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (92, 22);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (92, 213);\
+//93\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (93, 50);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (93, 213);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (93, 27);\
+//94\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (94, 10);\
+//95\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (95, 10);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (95, 215);\
+\
+
+\f1\b \ul products (alcoholic drinks)\
+\
+
+\f2\b0 \ulnone INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (96, 'Sex on the Beach', 8, 160, 250, 298);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (97, 'Mai Tai', 8, 180, 250, 321);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (98, 'Cosmopolitan', 8, 180, 250, 349);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (99, 'Bloody Mary', 8, 150, 250, 302);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (100, 'Daiquiri', 8, 160, 250, 343);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (101, 'Margarita', 8, 170, 250, 321);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (102, 'Colada', 8, 180, 250, 335);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (103, 'Roccaperciata Grillo', 8, 185, 150, 309);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (104, 'Shiraz Malbec Esperado', 8, 210, 150, 327);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (105, 'Silk and Spice Red Sogrape Vinhos', 8, 295, 150, 330);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (106, 'Valpolicella Essere', 8, 210, 150, 331);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (107, 'Shiraz Malbec Esperado', 8, 210, 150, 345);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (108, 'Vecchia Romagna', 8, 160, 50, 290);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (109, 'Absolut', 8, 110, 50, 299);\
+\
+INSERT INTO products (id, name, category_id,  price, serving_weight, energy_value)\
+VALUES (110, 'Chivas Regal 12 y.o.', 8, 270, 50, 272);\
+\
+
+\f1\b \ul product ingredient (alcoholic drinks)
+\f2\b0 \ulnone \
+
+\f1\b \ul \
+
+\f2\b0 \ulnone //96\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (96, 216);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (96, 217);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (96, 218);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (96, 219);\
+//97\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (97, 220);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (97, 221);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (97, 222);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (97, 93);\
+//98\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (98, 216);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (98, 222);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (98, 219);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (98, 93);\
+//99\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (99, 216);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (99, 18);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (99, 93);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (99, 43);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (99, 40);\
+//100\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (100, 221);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (100, 93);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (100, 2);\
+//101\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (101, 224);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (101, 222);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (101, 91);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (101, 1);\
+//102\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (102, 232);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (102, 36);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (102, 200);\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (102, 2);\
+//103\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (103, 225);\
+//104\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (104, 226);\
+//105\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (105, 227);\
+//106\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (106, 228);\
+//107\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (107, 229);\
+//108\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (108, 230);\
+//109\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (109, 216);\
+//110\
+INSERT INTO product_ingredient (product_id, ingredient_id) VALUES (110, 231);\
+\
+\
+\'97\'97\'97\'97\'97\'97\uc0\u1087 \u1088 \u1086 \u1074 \u1077 \u1088 \u1080 \u1090  sql join \u1087 \u1088 \u1086 \u1076 \u1091 \u1082 \u1090 -\u1080 \u1085 \u1075 \u1088 \u1077 \u1076 \u1080 \u1077 \u1085 \u1090  \'97\'97\'97\'97\'97\'97\
+SELECT products.name, ingredients.name\
+FROM product_ingredient\
+JOIN ingredients ON product_ingredient.ingredient_id=ingredients.id\
+JOIN products ON product_ingredient.product_id=products.id\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+}

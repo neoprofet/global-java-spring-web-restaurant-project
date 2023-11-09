@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(326deg, rgba(255, 255, 255, 0.8) 0%, rgb(211, 211, 211) 15%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.8) 100%);
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/*TITLE NAME AT THE TOP OF PAGE*/
+#title {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 200;
+    font-size: 3em;
+    color: #262626;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 35px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.product {
+    margin-top:10% ;
+    width: 500px;
+    height: 500px;
+    animation: animate1 3s infinite alternate;
+    z-index: 20
+}
+
+.card .desc {
+    width: 400px;
+    font-size: 18px;
+    line-height: 1.4;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc h3 {
+    padding: 16px;
+    text-align: center;
+}
+.desc p {
+    padding: 16px;
+    text-align: center;
+    font-size: 20px;
+}
+.desc .price {
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.desc button {
+    width: 60%;
+    padding: 16px;
+    background-color: #47a44a;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+.desc back a {
+
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #262626;
+    background-color: #989898;
+    padding: 16px;
+    border: none;
+    text-align: center;
+    border-radius: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.desc back {
+    width: 60%;
+    padding: 16px;
+    background-color: #989898;
+    color: #262626;
+    border: none;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 16px 0;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+
+.container .bg {
+    position: absolute;
+    width: 50rem;
+    transform: translateX(270px);
+}
+
+
+.card .desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.desc h3 {
+    padding: 16px;
+    font-size: 30px;
+}
+
+/* == Animation == */
+@keyframes animate1 {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(-80px) ;
+    }
+}
+@keyframes animate2 {
+    0% {
+        transform: translateY(140px) translateX(280px) rotate(90deg);
+    }
+    100% {
+        transform: translateY(100px) translateX(280px) rotate(100deg);
+    }
+}
+/* == Responsive == */
+@media only screen and (max-width: 480px) {
+    .card {
+        display: block;
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    .product .product {
+        width: 200px;
+        height: 200px;
+        transform: translateY(-70px) translateX(0px);
+    }
+    .card .desc {
+        display: inline-block;
+        transform: none;
+    }
+    .desc h3 {
+        padding: 30px 0 10px;
+    }
+    .desc p {
+        padding: 7px;
+    }
+    .desc .price {
+        padding: 7px;
+    }
+    .desc button {
+        width: 70%;
+    }
+
+    .container .bg {
+        transform: translateX(180px);
+    }
+    @keyframes animate1 {
+        0% {
+            transform: translateY(-80px);
+        }
+        100% {
+            transform: translateY(-70px) ;
+        }
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+    .product .product {
+        width: 200px;
+        height: 200px;
+    }
+
+    .desc h3 {
+        padding: 30px 0 10px;
+    }
+    .desc p {
+        padding: 7px;
+    }
+    .desc .price {
+        padding: 7px;
+    }
+    .desc button {
+        width: 50%;
+    }
+}
+
+/*-----------------------------NAVBAR-----------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px 100px;
+    background: rgba(126, 126, 126, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    z-index: 100;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(194, 193, 193, 0.37),
+            transparent
+    );
+    transition: 0.6s;
+}
+.header:hover::before {
+    left: 100%;
+}
+.logo {
+    color: #262626;
+    font-weight: 120;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: default;
+}
+.navbar a {
+    font-weight: 120;
+    color: #262626;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.6s;
+}
+.navbar a:hover {
+    color: #7d9d97;
+}
+#menu-icon {
+    font-size: 36px;
+    color: #262626;
+    display: none;
+}
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+    .header {
+        padding: 1.25rem 15%;
+    }
+}
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        background: rgba(70, 70, 70, 10);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .nav-bg {
+        position: absolute;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        height: 295px;
+        background: rgba(70, 70, 70, 10);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 99;
+        display: none;
+    }
+    .nav-bg.active {
+        display: block;
+    }
+}
+/*-----------------------------NAVBAR-----------------------------*/

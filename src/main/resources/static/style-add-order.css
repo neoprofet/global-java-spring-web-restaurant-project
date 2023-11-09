@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200;300;400;500;600;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background: #ffffff;
+}
+
+.container {
+    margin-top: 200px;
+    width: auto;
+    display: block;
+    padding: 10px 50px 50px;
+    background: transparent;
+}
+
+.container .card {
+    position: relative;
+    width: 800px;
+    height: auto;
+    margin: 40px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.50);
+    border-radius: 25px;
+    background: rgba(91, 87, 87, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-left: 0.7px solid rgb(137, 135, 135);
+    border-bottom: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-right: 0.7px solid rgb(137, 135, 135);
+    backdrop-filter: blur(20px);
+}
+
+/*TITLE NAME AT THE TOP OF PAGE*/
+#title {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 200;
+    font-size: 3em;
+    color: #262626;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+h2 small {
+    font-weight: normal;
+    color: #888;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: #53B2C8;
+}
+
+/*-----------------------------STICKY BUTTONS-----------------------------*/
+.fixed-btn {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20%;
+    right: 3%;
+    background: rgba(14, 14, 14, 0.1);
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-top: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-left: 0.7px solid rgb(10, 4, 4, 0.5);
+    border-bottom: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-right: 0.7px solid rgb(10, 4, 4, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 35px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+}
+
+.fixed-btn {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(0, 134, 66);
+}
+
+.fixed-btn:active {
+    box-shadow: 0 0;
+}
+
+.fixed-btn-call {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    background: rgba(14, 14, 14, 0.1);
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-top: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-left: 0.7px solid rgb(10, 4, 4, 0.5);
+    border-bottom: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-right: 0.7px solid rgb(10, 4, 4, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 35px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+}
+
+.fixed-btn-call {
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(8, 78, 128);
+}
+
+.fixed-btn-call:active {
+    box-shadow: 0 0;
+}
+
+.fixed-btn button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.fixed-btn-back {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    background: rgba(14, 14, 14, 0.1);
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-top: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-left: 0.7px solid rgb(10, 4, 4, 0.5);
+    border-bottom: 0.7px solid rgba(10, 4, 4, 0.5);
+    border-right: 0.7px solid rgb(10, 4, 4, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 35px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+}
+
+.fixed-btn-back  {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+}
+
+.fixed-btn-back :active {
+    box-shadow: 0 0;
+}
+
+/*-----------------------------STICKY BUTTONS-----------------------------*/
+/* ------------ FOR NAME, PHONE AND OTHER STRING VALUES ------------ */
+.group {
+    position: relative;
+    margin-bottom: 45px;
+    background: transparent;
+}
+
+.group input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background: transparent;
+}
+
+.group input:focus {
+    outline: none;
+}
+
+.group label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.group input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #626262;
+}
+
+/* BOTTOM BARS  */
+.group .bar {
+    position: relative;
+    display: block;
+    width: 800px;
+}
+
+.group .bar:before, .bar:after {
+    content: '';
+    height: 0px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #626262;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.group .bar:before {
+    left: 50%;
+}
+
+.group .bar:after {
+    right: 50%;
+}
+
+/* active state */
+.group input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER */
+.group .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+.group input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #626262;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #626262;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #626262;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+/* ------------ FOR NAME, PHONE AND OTHER STRING VALUES ------------ */
+/*------------------------------checkbox------------------------------*/
+
+.container .group1 {
+    padding: 8px 48px;
+    margin: 8px;
+
+}
+
+
+.group1 input[type="checkbox"] {
+    display: none;
+}
+
+.group1 label {
+    position: relative;
+    font-size: 20px;
+
+}
+
+.group1 label::before {
+    content: "";
+    background: url("../static/images/check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -8px;
+
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+.group1 input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+}
+
+.group1 label::after {
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+}
+
+/*------------------------------checkbox------------------------------*/
+/*------------------------------navbar------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px 100px;
+    background: rgba(126, 126, 126, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    z-index: 100;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(194, 193, 193, 0.37),
+            transparent
+    );
+    transition: 0.6s;
+}
+
+.header:hover::before {
+    left: 100%;
+}
+
+.logo {
+    color: #262626;
+    font-weight: 120;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.navbar a {
+    font-weight: 120;
+    color: #262626;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.6s;
+}
+
+.navbar a:hover {
+    color: #7d9d97;
+}
+
+#menu-icon {
+    font-size: 36px;
+    color: #262626;
+    display: none;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+    .header {
+        padding: 1.25rem 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        background: rgba(70, 70, 70, 10);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+    }
+
+    .nav-bg {
+        position: absolute;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        height: 295px;
+        background: rgba(70, 70, 70, 10);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 99;
+        display: none;
+    }
+
+    .nav-bg.active {
+        display: block;
+    }
+
+    /*------------------------------navbar------------------------------*/
+
+}
