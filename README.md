@@ -19,4 +19,4 @@ The CSS is written quite hardcore, not very proficiently. Emphasis is placed on 
 * Hibernate
 * JS,CSS, HTML, Thymeleaf
 
-# Check screenshots, diagrams to for more understanding
+# Check screenshots, diagrams for more understanding
